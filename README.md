@@ -167,47 +167,37 @@ Lesson:     Always read the full error message before assuming
 [ ] Screenshot of: sudo ufw status verbose
   <img width="792" height="712" alt="day02-ufw-rules png" src="https://github.com/user-attachments/assets/4d297d7e-8eee-44e6-b8ae-d8a2a9a6fdb4" />
 
-
 [ ] Screenshot of: sudo systemctl status ssh (green active)
-    Save as: day02-ssh-running.png
+<img width="789" height="677" alt="day02-ssh-running" src="https://github.com/user-attachments/assets/4e2a6705-6461-4af9-80cd-718604d56c08" />
 
 [ ] Screenshot of: ls ~/soc-lab/ showing all four folders
-    Save as: day02-folder-structure.png
+  <img width="797" height="688" alt="day02-folder-structure" src="https://github.com/user-attachments/assets/c6ac049f-ddad-406e-8bf3-aa045526131a" />
 
-────────────────────────────────────────────────
-SNAPSHOT LOG
-────────────────────────────────────────────────
-Snapshot 1:   clean-base         (taken Day 1)
+<b>SNAPSHOT LOG</b><br>
+Snapshot 1:   clean-base         (taken Day 1)<br>
 Snapshot 2:   post-hardening     (taken today)
 
-Taken after:  Hostname set, UFW configured, SSH installed,
+Taken after:  Hostname set, UFW configured, SSH installed,<br>
               folder structure created.
-Purpose:      Restore point after initial hardening.
-              Roll back here if any tool installation in
-              Week 1 causes system instability.
+Purpose:      Restore point after initial hardening.<br>
+              Roll back here if any tool installation in<br>
+              Week 1 causes system instability.<br>
 
-────────────────────────────────────────────────
-SECURITY POSTURE AFTER DAY 2
-────────────────────────────────────────────────
+<b>SECURITY POSTURE AFTER DAY 2</b><br>
 - Firewall:   UFW active, default deny incoming,
-              only port 22 explicitly allowed
+              only port 22 explicitly allowed<br>
 - SSH:        Installed and running — needed for
-              remote access and log testing later
+              remote access and log testing later<br>
 - Hostname:   Clearly identifies machine in logs
               (soc-analyst-lab will appear in syslog,
-              auth.log, and Wazuh agent name)
+              auth.log, and Wazuh agent name)<br>
 - Folders:    Organised structure ready to receive
               evidence files from Day 3 onward
 
-────────────────────────────────────────────────
-PENDING FOR DAY 3
-────────────────────────────────────────────────
-- Download Metasploitable 2 from SourceForge
-- Import into VirtualBox as second VM
-- Set Metasploitable to Host-only adapter ONLY
-- Boot and confirm it gets a 192.168.56.x IP
-- Ping test: Ubuntu → Metasploitable
-- Document both IPs in lab network diagram
-
-
-END OF DAY 1 ENTRY
+<b>PENDING FOR DAY 3</b><br>
+- Download Metasploitable 2 from SourceForge<br>
+- Import into VirtualBox as second VM<br>
+- Set Metasploitable to Host-only adapter ONLY<br>
+- Boot and confirm it gets a 192.168.56.x IP<br>
+- Ping test: Ubuntu → Metasploitable<br>
+- Document both IPs in lab network diagram<br>
